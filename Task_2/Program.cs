@@ -1,21 +1,26 @@
-﻿class Program
+﻿
+// Задача 2: Задайте массив на 10 целых чисел.
+// Напишите программу, которая определяет
+// количество чётных чисел в массиве.
+
+class Program
 {
     static void Main()
     {
         // Задаем массив из 10 целых чисел
-        int[] arr = { 5, 12, 7, 14, 23, 30, 18, 42, 56, 91 };
+        int[] array = { 5, 12, 7, 14, 23, 30, 18, 42, 56, 91 };
 
         // Находим количество четных чисел в массиве
-        int countEven = 0;
+        int count = 0;
 
-        foreach (int num in arr)
+        foreach (int number in array)
         {
-            if (num % 2 == 0)
+            if (number % 2 == 0)
             {
-                countEven++;
+                count++;
             }
         }
 
-        Console.WriteLine($"Количество четных чисел в массиве: {countEven}");
+        Console.WriteLine($"Количество четных чисел в массиве: {count}");
     }
 }
